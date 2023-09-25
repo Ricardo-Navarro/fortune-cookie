@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(45deg, #190361 0%, #B0F 100%) no-repeat;
+  height: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+main {
+  background: #FFF;
+  width: min(48.2rem, 90%);
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+  border-radius: .5rem;
+  text-align: center;
+
+  margin-top: -12rem;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: #34355B;
+}
+
+.screen1 p {
+  color: #34355B;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  margin: 1.4rem auto 2rem;
+}
+
+.screen1 button {
+  border: none;
+  background-color: #FFF;
+  cursor: pointer;
+}
+
+.screen1 button:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {transform: translate(1px, 1px) rotate(0deg);}
+  10% {transform: translate(-1px, -2px) rotate(-1deg);}
+  20% {transform: translate(-2px, 0px) rotate(1deg);}
+  30% {transform: translate(2px, 2px) rotate(0deg);}
+  40% {transform: translate(1px, -1px) rotate(1deg);}
+  50% {transform: translate(-1px, 2px) rotate(-1deg);}
+  60% {transform: translate(-2px, 1px) rotate(0deg);}
+  70% {transform: translate(2px, 1px) rotate(-1deg);}
+  80% {transform: translate(-1px, -1px) rotate(1deg);}
+  90% {transform: translate(1px, 2px) rotate(-1deg);}
+  100% {transform: translate(1px, 0px) rotate(0deg);}
+  
+}
+
+.hide {
+  display: none;
+}
+
+.message {
+  background: #E4EDF1;
+  box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+
+  margin: 1.7rem 0 1.7rem 0;
+  padding: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  animation: revelation 2s;
+  animation: downtop 2s;
+}
+
+@keyframes revelation {
+  0% {
+    
+    transition: scale(0.1);
+    
+  }
+  100% {
+    
+    transition: scale(1);
+    
+  }
+}
+@keyframes downtop {
+  0%{
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.message p {
+  color: #000;
+  text-align: center;
+  font-family: Dancing Script;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.screen2 button {
+  background: hsla(35, 100%, 50%, 1);
+  padding: 1.6rem;
+  border-radius: .4rem;
+  border: none;
+
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.screen2 button:hover {
+  background: rgb(238, 176, 89);
+}
